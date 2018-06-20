@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden: !(isHandset | async)!.matches}" fixedInViewport="false" [attr.role]="isHandset ? 'dialog' : 'navigation'"
+    [mode]="(isHandset | async)!.matches ? 'over' : 'side'" [opened]="!(isHandset | async)!.matches">
+
+
+
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">Home</a>
+      <a mat-list-item routerLink="/menu">Menu</a>
+      <a mat-list-item routerLink="/functions">Functions</a>
+      <a mat-list-item routerLink="/contact">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- <div>
+      <img id="top-background" src="assets/background1.jpg">
+    </div> -->
+    <mat-toolbar color="primary" >
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span id="logo-span">
+        <img id="logo" src="assets/logo.png">
+      </span>
+      <span class="items"></span>
+      <div id="nav-items">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/menu">Menu</a>
+        <a routerLink="/functions">Functions</a>
+        <a routerLink="/contact">Contact</a>
+      </div>
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

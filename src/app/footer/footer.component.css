@@ -1,0 +1,20 @@
+#footer{
+    background: rgb(35, 31, 32) ;
+    /* background-image: url("../../assets/background-1.png"); */
+    color:white;
+}
+#heading{
+     color:rgba(241, 111, 48, 1);
+}
+#logo{
+  width:300px;
+}
+#author{
+     color:rgba(241, 111, 48, 1);
+}
+#dimmi{
+      width:200px;
+}
+.icon{
+    color:white;
+}

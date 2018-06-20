@@ -1,0 +1,18 @@
+#section-bi{
+    background: rgba(35, 31, 32, 0.9) ;
+    background-image: url("../../assets/background-1.png");
+}
+#section-oi{
+    background: rgba(241, 111, 48, 1);
+    /* background-image: url("../../assets/background-1.png"); */
+}
+
+.card-1{
+ text-align: center;
+ margin-top: 20px;
+  background: rgba(241, 111, 48, 1);
+  color: white;
+}
+#text{
+     color: white;
+}
