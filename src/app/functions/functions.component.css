@@ -1,6 +1,7 @@
 #section-bi{
     background: rgba(35, 31, 32, 0.9) ;
     background-image: url("../../assets/background-1.png");
+    background-attachment: fixed;
 }
 #section-oi{
     background: rgba(241, 111, 48, 1);

@@ -20,7 +20,7 @@
   background-attachment: fixed;
 }
 #landing-page{
-    background: url("../../assets/home/background1.jpg") ;
+    background: url("../../assets/home/home-background1.jpg") ;
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -39,6 +39,7 @@
 #section-2{
     background: rgba(241, 111, 48, 1);
     background-image: url("../../assets/background-1.png");
+    background-attachment: fixed;
 }
 
 #section-3{
@@ -53,6 +54,7 @@
 #section-4{
     background: rgba(35, 31, 32, 0.9) ;
     background-image: url("../../assets/background-1.png");
+    background-attachment: fixed;
 }
 
 .card-1{
@@ -78,6 +80,7 @@
 #section-7{
     background: rgb(35, 31, 32) ;
     background-image: url("../../assets/background-1.png");
+    background-attachment: fixed;
 }
 #color-o{
    background: rgba(241, 111, 48, 1);

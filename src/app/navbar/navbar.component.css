@@ -30,11 +30,12 @@ mat-toolbar a {
   transition: .9s;
 }
 mat-toolbar a:hover{
-  color: #fff;
+  color: rgb(12, 7, 7);
   background: #f16f30;
+  border-radius: 8px;
 }
 mat-nav-list a:hover{
-  color: #fff;
+  color: rgb(138, 132, 132);
   background: #f16f30;
 }
 /* #logo-span{
