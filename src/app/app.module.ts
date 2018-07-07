@@ -17,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { FunctionsComponent } from './functions/functions.component';
 import { ContactComponent } from './contact/contact.component';
+import { LucnchComponent } from './menu/lucnch/lucnch.component';
+import { TakeawayComponent } from './menu/takeaway/takeaway.component';
+import { DineInComponent } from './menu/dine-in/dine-in.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +27,9 @@ const appRoutes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'functions', component: FunctionsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'menu/lunch', component: LucnchComponent },
+  { path: 'menu/takeaway', component: TakeawayComponent },
+  { path: 'menu/dinein', component: DineInComponent },
   { path: '', component: HomeComponent },
 ]
 
@@ -35,7 +41,10 @@ const appRoutes: Routes = [
     FooterComponent,
     MenuComponent,
     FunctionsComponent,
-    ContactComponent
+    ContactComponent,
+    LucnchComponent,
+    TakeawayComponent,
+    DineInComponent
   ],
   imports: [
     BrowserModule,

@@ -1,48 +1,20 @@
-#section-1{
-    /* background: rgba(241, 111, 48, 1); */
-    background-image: url("../../assets/menu/background3.jpg");
-     background-repeat: no-repeat;
-    background-position: center center;
-     background-size: cover;
-    background-attachment: fixed;
-}
-#section-2{
-    background-image: url("../../assets/menu/background2.jpg");
-     background-repeat: no-repeat;
-    background-position: center center;
-     background-size: cover;
-    background-attachment: fixed;
-}
-#section-3{
-    background-image: url("../../assets/menu/background1.jpg");
-     background-repeat: no-repeat;
-    background-position: center center;
-     background-size: cover;
-    background-attachment: fixed;
-}
-/* #section-3{
-    background: url("../../assets/carousel1.jpg") ;
-    min-height: 300px ;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-} */
 #section-top{
-       background-image: url("../../assets/menu/background3.jpg");
+    background-image: url("../../assets/menu/background3.jpg");
     min-height: 500px ;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-     background-size: cover;
+    background-size: cover;
 }
 #card1{
     background: rgba(241, 111, 48, 1);
-    color:white
+    color:white;
+    width: 400px;
+    height: 200px;
 }
 #card2{
    background: rgb(35, 31, 32) ;
-    color:white
-}
-.text{
-   color: white;
+   color:white;
+   width: 400px;
+   height: 200px;
 }
