@@ -27,10 +27,9 @@ mat-toolbar a {
   margin: 0 20px;
   color: white;
   text-decoration: none;
-  transition: .9s;
+  transition: .5s;
 }
 mat-toolbar a:hover{
-  color: rgb(12, 7, 7);
   background: #f16f30;
   border-radius: 8px;
 }
@@ -38,10 +37,7 @@ mat-nav-list a:hover{
   color: rgb(138, 132, 132);
   background: #f16f30;
 }
-/* #logo-span{
-margin-left: 50rem;
-margin-top:10vh;
-} */
+
 
 #nav-items{
   margin-right: 10vh;
