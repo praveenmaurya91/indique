@@ -1,10 +1,10 @@
 <section class="py-3" id="section-bi">
   <div class="row justify-content-center">
     <div class="col-md-9 card-1">
-      <h1>Contact</h1>
+      <h1 class="font-italianno-heading" style=" color: rgba(241, 111, 48, 1);">Contact</h1>
       <h2>Best Indian Food</h2>
       <h3>IN VICTORIA POINT, QLD</h3>
-      <h4>indique Indian Restaurant</h4>
+      <h4 class="font-italianno-text" style=" color: rgba(241, 111, 48, 1);">indique Indian Restaurant</h4>
       <p>When you’re in the mood for some amazing curries, stop by our restaurant.</p>
     </div>
   </div>
@@ -12,12 +12,14 @@
 
 
 <section class="py-5" id="section-top">
+  <br>
+  <br>
   <mat-card id="card2">
     <mat-card-content>
       <div class="row justify-content-center" id="text">
 
         <div class="col-md-5 text-center">
-          <h1>Order Takeaway or Dine with Us!</h1>
+          <h1 class="font-italianno-heading" style=" color: rgba(241, 111, 48, 1);">Order Takeaway or Dine with Us!</h1>
           <h5>LAKESIDE SHOPPING CENTRE, D-01, LAKESIDE</h5>
           <h5>BOULEVARD</h5>
           <h5>Victoria Point, QLD 4165</h5>
@@ -32,7 +34,7 @@
         <div class="col-md-5 text-center">
           <!-- <mat-card id="card2"> -->
           <!-- <mat-card-content> -->
-          <h1>Open 7 Days for Lunch and Dinner</h1>
+          <h1 class="font-italianno-heading" style=" color: rgba(241, 111, 48, 1);">Open 7 Days for Lunch and Dinner</h1>
           <h5>Lunch: Mon. to Sun.: 11:30 AM – 2:30 PM</h5>
           <h5>Dinner: Sun. to Thurs.: 5:00 PM – 9:00 PM</h5>
           <h5>Fri. & Sat.: 5:00 PM – Late</h5>
@@ -47,7 +49,8 @@
     </mat-card-content>
   </mat-card>
   <br>
-
+  <br>
+  <br>
   <div class="row justify-content-center">
     <div class="col-md-5 text-center">
       <mat-card id="card2">
@@ -59,26 +62,40 @@
 
     </div>
     <div class="col-md-5 text-center">
-      <mat-card id="card1">
+      <mat-card >
         <mat-card-content>
-          <div class="input-group mb-3 justify-content-center">
-            <mat-form-field class="inputbox">
-              <input matInput placeholder="Name">
-            </mat-form-field>
-            <br>
-            <mat-form-field class="inputbox">
-              <input matInput placeholder="Email">
-            </mat-form-field>
-            <br>
-            <mat-form-field class="inputbox">
-              <input matInput placeholder="Phone">
-            </mat-form-field>
-            <br>
-            <mat-form-field class="inputbox">
-              <textarea matInput placeholder="Message"></textarea>
-            </mat-form-field>
-          </div>
-          <button mat-raised-button id="btn">Send Message</button>
+          <form class="form" [formGroup]="form" novalidate autocomplete="off">
+            <div class="input-group mb-3 justify-content-center">
+              <mat-form-field class="inputbox">
+                <input matInput class="label " name="name" placeholder="Name" formControlName="name" >
+                <mat-error>
+                  {{errors.name}}
+                </mat-error>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="inputbox">
+                <input matInput placeholder="Email" name="email" formControlName="email" >
+                <mat-error>
+                  {{errors.email}}
+                </mat-error>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="inputbox">
+                <input matInput placeholder="Phone" name="phone" formControlName="phone" >
+                <mat-error>
+                  {{errors.phone}}
+                </mat-error>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="inputbox">
+                <textarea matInput placeholder="Message" name="message" formControlName="message" ></textarea>
+                <mat-error>
+                  {{errors.message}}
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <button mat-raised-button id="btn" type="submit" (click)="onSubmit(form)" [disabled]="form.invalid">Send Message</button>
+          </form>
         </mat-card-content>
 
       </mat-card>
