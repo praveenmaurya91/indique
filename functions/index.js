@@ -21,7 +21,7 @@ exports.sendMessage = functions.firestore
 
         // Template for sending the email.
         const mailOptions = {
-            to: 'info@indique.com.au',
+            to: 'info@indique.com.au, indiqueindian@gmail.com',
             subject: `Contact message from ${value.name}`,
             html: `<h1> Name: ${value.name}  </h1>
             <h3>Phone: ${value.phone}</h3>

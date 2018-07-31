@@ -2,9 +2,7 @@
 
   <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden: !(isHandset | async)!.matches}" fixedInViewport="false" [attr.role]="isHandset ? 'dialog' : 'navigation'"
     [mode]="(isHandset | async)!.matches ? 'over' : 'side' " [opened]="!(isHandset | async)!.matches"  >
-
-
-
+    
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item (click)="drawer.close()" routerLink="/home">Home</a>
