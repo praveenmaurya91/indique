@@ -100,9 +100,9 @@ ul li{
     #logo-span{
        display: none;
     }
-    #landing-page{
-    height: 130vh;
-}
+    /* #landing-page{
+    height: 100vh;
+} */
 }
   
 

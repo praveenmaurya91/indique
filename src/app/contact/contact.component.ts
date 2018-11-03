@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../services/contact.service';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl,Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-contact',
@@ -10,10 +11,12 @@ import { FormGroup, FormControl,Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+  action: string;
   errors = errorMessages;
   constructor(
     private contactService: ContactService,
     private router: Router,
+    public snackBar: MatSnackBar
   ) { }
 
   ngOnInit() {
@@ -32,6 +35,7 @@ export class ContactComponent implements OnInit {
   onSubmit(form) {
     this.contactService.addContact(form.value);
     console.log(form.value)
+    this.snackBar.open('Your message has been sent', this.action, { duration: 4000, } );
     this.router.navigate(['']);
   }
 

@@ -24,6 +24,8 @@
 }
 #btn{
     font-size: 20px;
+       background: rgba(241, 111, 48, 1);
+    color:white
 }
 
 #section-top{
