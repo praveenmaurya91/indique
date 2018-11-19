@@ -2,26 +2,40 @@
   <div class="row justify-content-center py-2">
     <div class="col-md-7 text-center" id="landing-content">
       <span id="logo-span">
-        <img id="logo" class="animated  fadeInDown delay-7s" src="assets/logo.png">
+        <img id="logo" class="animated fadeInDown delay-7s" src="assets/logo.png">
       </span>
       <h4 id="text" class="font-italianno animated fadeInDown delay-7s">The Fine Indian Cuisine</h4>
       <div class="py-2" id="text">
-        <h1 class="display-1" class="font-italianno-heading  animated pulse infinite delay-2s">
+        <h1 id="h1-txt" class="font-italianno-heading animated pulse infinite delay-2s">
           <b>Call Now
             <i class="fas fa-phone"></i> 07 3207 0333</b>
         </h1>
-        <h1>For Booking Takeaway & Delivery </h1>
+        <h1 id="h1-txt">For Booking Takeaway & Delivery </h1>
         <br>
-        <h4>LAKESIDE SHOPPING CENTRE, D-01, LAKESIDE BOULEVARD
+        <h4 id="h4-txt">LAKESIDE SHOPPING CENTRE, D-01, LAKESIDE BOULEVARD
           <br>Victoria Point, QLD 4165
           <br>(Lakeside Drive)</h4>
 
         <br>
-        <a class="animated fadeInUp" mat-raised-button id="color-animation" href="tel:0455054645">
-          <h1>Call Now</h1>
-          <h1></h1>
-          <h5>For Function & Catering </h5>
-        </a>
+        <!-- <a class="animated fadeInUp" mat-raised-button id="color-animation" href="tel:0455054645">
+ <h1>Call Now</h1>
+ <h1></h1>
+ <h5>For Function & Catering </h5>
+ </a> -->
+
+        <div class="row justify-content-center py-2">
+          <div class="col-md-3 py-2 ">
+            <a class="btn-order" href="https://ordermate.online/indiqueindianfinecuisine">
+              <h4>Order Now</h4>
+            </a>
+          </div>
+          <div class="col-md-3 py-2">
+            <a class="btn-call" href="tel:0455054645">
+              <h4>Call Now</h4>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -45,7 +59,7 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="col-md-8 d-xl-none d-md-none" >
+    <div class="col-md-8 d-xl-none d-md-none">
       <img data-aos="fade" data-aos-duration="2000" class="img-fluid" src="assets/home/Indique-special.jpg">
     </div>
   </div>
@@ -64,7 +78,7 @@
     <div class="carousel-inner">
       <div class="carousel-item carousel-image-1 active">
         <div class="container">
-          <div class="carousel-caption d-none d-sm-block  mb-5">
+          <div class="carousel-caption d-none d-sm-block mb-5">
             <h2 class="display-3 font-italianno">CATERING ◆ WEDDINGS ◆ FUNCTIONS</h2>
             <h5 class="lead font-italianno-text">The Fine Indian Cuisine</h5>
             <a routerLink="/about" routerLink="/contact" class="btn btn-danger btn-lg">Book Now</a>
@@ -84,7 +98,7 @@
 
       <div class="carousel-item carousel-image-3">
         <div class="container">
-          <div class="carousel-caption d-none d-sm-block  mb-5">
+          <div class="carousel-caption d-none d-sm-block mb-5">
             <h2 class="display-3 font-italianno">CATERING ◆ WEDDINGS ◆ FUNCTIONS</h2>
             <h5 class="lead font-italianno-text">The Fine Indian Cuisine
             </h5>
@@ -270,7 +284,7 @@
 
       <h1>PLACE YOUR</h1>
       <h1>ORDER</h1>
-      <h3 class="font-italianno-text" style="  color: rgba(241, 111, 48, 1);">Open 7 Days for Lunch and Dinner</h3>
+      <h3 class="font-italianno-text" style=" color: rgba(241, 111, 48, 1);">Open 7 Days for Lunch and Dinner</h3>
       <br>
       <a mat-raised-button id="color-o" href="tel:0732070333">
         <h1>Order Now</h1>
